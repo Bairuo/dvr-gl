@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="renderer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/Debug/2048" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/Debug/" />
+				<Option object_output="../obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../bin/Release/2048" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin/Release/" />
+				<Option object_output="../obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../include" />
+		</Compiler>
+		<Linker>
+			<Add library="../lib/glew32s.lib" />
+			<Add library="../lib/libglfw3dll.lib" />
+			<Add library="../lib/OPENGL32.LIB" />
+			<Add library="../lib/freetype.lib" />
+		</Linker>
+		<Unit filename="../bin/Debug/shaders/2D_Standard/standard.frag" />
+		<Unit filename="../bin/Debug/shaders/2D_Standard/standard.vs" />
+		<Unit filename="../bin/Debug/shaders/3D_Standard/standard.frag" />
+		<Unit filename="../bin/Debug/shaders/3D_Standard/standard.vs" />
+		<Unit filename="../include/Camera.h" />
+		<Unit filename="../include/Color.h" />
+		<Unit filename="../include/ConfigUtilities.h" />
+		<Unit filename="../include/Cuboid.h" />
+		<Unit filename="../include/DVRTextureGenerate.h" />
+		<Unit filename="../include/Frame.h" />
+		<Unit filename="../include/GameTime.h" />
+		<Unit filename="../include/GraphNode.h" />
+		<Unit filename="../include/KeyUtilities.h" />
+		<Unit filename="../include/Light.h" />
+		<Unit filename="../include/Material.h" />
+		<Unit filename="../include/Object.h" />
+		<Unit filename="../include/Renderer.h" />
+		<Unit filename="../include/Shader.h" />
+		<Unit filename="../include/TextRenderer.h" />
+		<Unit filename="../include/Transform.h" />
+		<Unit filename="../include/bairuofunctions.h" />
+		<Unit filename="../include/basicrender.h" />
+		<Unit filename="../include/property.h" />
+		<Unit filename="../src/Camera.cpp" />
+		<Unit filename="../src/Color.cpp" />
+		<Unit filename="../src/ConfigUtilities.cpp" />
+		<Unit filename="../src/Cuboid.cpp" />
+		<Unit filename="../src/DVRTextureGenerate.cpp" />
+		<Unit filename="../src/Frame.cpp" />
+		<Unit filename="../src/GameTime.cpp" />
+		<Unit filename="../src/GraphNode.cpp" />
+		<Unit filename="../src/KeyUtilities.cpp" />
+		<Unit filename="../src/Light.cpp" />
+		<Unit filename="../src/Object.cpp" />
+		<Unit filename="../src/Renderer.cpp" />
+		<Unit filename="../src/Shader.cpp" />
+		<Unit filename="../src/TextRenderer.cpp" />
+		<Unit filename="../src/Transform.cpp" />
+		<Unit filename="../src/bairuofunctions.cpp" />
+		<Unit filename="../src/basicrender.cpp" />
+		<Unit filename="../src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
